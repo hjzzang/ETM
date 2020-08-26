@@ -8,13 +8,14 @@ import itertools
 from scipy.io import savemat, loadmat
 import re
 import string
+import os
 
 # Maximum / minimum document frequency
 max_df = 0.7
 min_df = 10  # choose desired value for min_df
 
 # Read stopwords
-with open('stops.txt', 'r') as f:
+with open('./scripts/stops.txt', 'r') as f:
     stops = f.read().split('\n')
 
 # Read data
